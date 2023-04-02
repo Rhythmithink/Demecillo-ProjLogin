@@ -1,0 +1,297 @@
+html {/*this is the whole html*/
+    scroll-behavior: smooth; /*for the smooooooooooothhhhh scrollin*/
+    padding: 0;
+}	
+
+body { /* this is the body*/
+    margin: 0;
+    padding: 0;
+    background-color: #97D2EC;
+
+}	  
+
+header { /*this is the header*/
+    z-index: 1;
+      position: sticky;
+      position: sticky;
+      font-size: 20px;
+     top:  0;
+      border-bottom: #EAEAEA solid;
+      background-color: #25316D;
+    }
+
+#scrolled{
+    margin: 0;
+}
+
+#scroll { /*the thingy that tps u up*/
+    z-index: 1;
+    float: right;
+    position: sticky; 
+    position: sticky;
+    top: 92%;
+    width:  80px;
+    height:  80px; 
+    background: url('sprite.png') -87px -389px; 
+    margin: -120px 0 0 0;
+
+
+}
+
+#scroll:hover { /*starts the submarine animation when  u hover*/
+    animation-name: submar;
+     animation-duration: 6s;
+     animation-iteration-count: infinite;			
+}
+
+@keyframes submar {
+    /*animates the submarine, cool*/
+0% {
+    transform: translate(0, 0);
+
+} 	
+20% {
+    transform: translate(-10px, 0px);
+
+} 		
+
+40% {
+    transform: translate(0px, -5px);
+
+} 
+60% {
+    transform: translate(0px, 0px);
+}
+80%	{
+    transform: translate(-8px, -4px);
+}	
+
+}
+
+#logoo{/*logo*/
+    width:  10px;
+    padding-left: -20px; 
+    top: 0;
+    display: inline-block;
+    color: #EAEAEA;
+}
+
+#nav{ /*nav bar*/
+    width: 700px;
+    float: right;
+
+    }
+
+#nav a { /*styles the links inside nav div*/
+    font-size: 20px;
+    display: inline-block;
+    color:  #EAEAEA;
+    text-decoration: none;
+    padding-right: 5%;
+}
+
+#nav a:active { /* makes it so that the text goes down, like a button. Boop*/
+
+transform: translateY(4px);
+
+}
+
+footer {  /* footer!*/
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background-color: #5F6F94;
+    margin: 0px;
+    position: relative;
+    bottom: 0;
+}
+
+
+
+#rilogow { 
+    transform: scale(.4); /* 40% smaller kasi idk how else to make the huge logo smaller*/
+    width:  250px;
+    height:  150px;
+    margin: -40px;
+    background: url('sprite.png') -5px -207px;
+}
+
+
+
+#socmedborder {
+    background-color: white; /*holds both the fb and yt divs together and provides a noice white border that exists even with different screen sizes*/
+    padding: 1px; 
+    text-align: center;
+}
+
+#facebok {          /* div that holds fb img*/
+    display: inline-block;
+    width: 49.7%;
+    margin: 0;
+    border: 1px white solid;
+    text-align: center;
+    color: white;
+    background-color: #5F6F94;
+
+}
+
+
+#yt {
+    border: 1px white solid;   /* div that holds yt img*/
+    display: inline-block;
+    width: 49.7%;
+    margin: 0;
+    text-align: center;
+    color: white;
+    background-color: #5F6F94;
+}
+
+#facebok img { /* fb img*/
+    width:  155px;
+    height:  150px;
+    background: url('sprite.png') -26px -22px;
+}
+
+#yt img { /* yt img */
+    width:  155px;
+    height:  150px;
+    background: url('sprite.png') -184px -22px;
+    
+
+}
+
+footer #socmedborder:hover{ /* make background fit the glow-ish*/
+    background-color: #fdeca6;
+}
+
+#f img{
+    transition: 1s;/*transition time for the glowwww para cool*/
+}
+#y img{
+    transition: 1s;/*transition time for the glowwww para cool*/
+}
+
+footer #f:hover img{/* gives glow effect when hover*/
+    border-radius: 50%;
+    background-color: #e8df62;	
+    box-shadow: 
+    0 0 6px 3px #e4df90,  
+        0 0 10px 10px #e4df90, 
+    0 0 100px 90px #fcf9ce; 
+
+}
+
+footer #y:hover img{ /* gives glow effect when hover*/
+    
+    border-radius: 50%;
+    background-color: #e8df62;	
+    box-shadow: 
+    0 0 6px 3px #e4df90,  
+        0 0 10px 10px #e4df90, 
+    0 0 100px 90px #fcf9ce; 
+    
+}
+
+article {
+    width: 400px;
+    margin: 10px;
+    background-color: white;
+    border: #25316D 3px solid;
+    height: 600px;
+    text-align: center;
+    display: inline-block;
+}
+#logNOW{
+    padding: 20px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+input{
+    width: 60%;
+    display: inline-block;
+    height: 25px;
+    font-size: 15px;
+}
+
+#login{
+    text-align: center;
+    background-color: #25316D;
+    color: white;
+    font-size: 40px;
+}
+
+section{
+    text-align: justify;
+    width: 400px;
+    display: block;
+    margin: auto;
+    padding:0;
+    border: white 2px solid;
+}
+
+button{
+    display: inline-block;
+    font-size: 20px;
+    background-color: #25316D;
+    color: white;
+}
+
+article a{
+    color: red;
+    font-size: 20px;
+
+}
+
+#notif{
+    font-size: 20px;
+    color: red;
+    background-color: rgb(218, 229, 245);
+}
+
+input:focus{
+    background-color: rgb(193, 193, 241);
+    outline: blue;
+}
+#picturaforspace{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#picspace { 
+    transform: scale(1.2); 
+    width:  250px;
+    height:  150px;
+    background: url('sprite.png')-271px -201px;
+}
+
+
+#words{
+    vertical-align: center;
+    display: inline-block;
+    width: 50%;
+    color: black;
+    font-size:35px;
+    
+
+}
+#cotnet{
+    text-align: center;
+    width: 100%;
+    vertical-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
